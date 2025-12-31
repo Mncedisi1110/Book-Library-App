@@ -1,0 +1,9 @@
+export default function SearchList({results}) {
+    return (
+        <div>
+            {results.map((result,id) =>{
+                return <div key={id}>{result.name}</div>
+            })}
+        </div>
+    )
+}
