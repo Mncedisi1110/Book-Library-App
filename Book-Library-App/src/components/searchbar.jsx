@@ -7,16 +7,19 @@ function SearchBar ({setResults}) {
   
 
     function fetch(){
-        fetchbook("https://openlibrary.org/dev/docs/api/search_inside")
+        fetchbook("https://wolnelektury.pl/api/books/")
         .then(response => {
             response.json()
         })
         .then(res =>{
             const results = res.filter((book)=>{
-                return value && book.name && book.author && book.toLowerCase
+                return value && book.title && book.author && book.toLowerCase
             });
             setResults(results);
+        }).catch(err =>{
+            console.log("Failed to fetch results",err)
         })
+        
     }
 
       const handleChange = (e)=> {

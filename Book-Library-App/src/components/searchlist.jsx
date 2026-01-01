@@ -1,9 +1,12 @@
 export default function SearchList({results}) {
-    return (
+    return(
         <div>
-            {results.map((result,id) =>{
-                return <div key={id}>{result.name}</div>
-            })}
+           {results.map(result =>{
+            return <div key={result.id}>{result.title}</div>
+           })}
+
         </div>
     )
 }
+        
+           

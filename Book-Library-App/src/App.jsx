@@ -2,7 +2,6 @@ import Home from './components/Home';
 import Categories from "./components/Categories";
 import ReadList from "./components/ReadList";
 import About from "./components/About";
-import Register from "./components/Register";
 import SearchList from './components/searchlist';
 import Navbar from "./components/Navbar"
 import SearchBar from './components/searchbar';
@@ -28,7 +27,7 @@ import { useState } from 'react';
       <SearchBar setResults={setResults} />
       <SearchList results={results} />
       </div>
-      
+     
     </div>
   
     <Routes>
@@ -37,7 +36,7 @@ import { useState } from 'react';
       <Route path = "/Categories" element = {<Categories />} />
       <Route path = "/ReadList" element = {<ReadList />} />
       <Route path = "/About" element = {<About />} />
-      <Route path = "/Register" element = {<Register />} />
+      
     </Routes>
     </BrowserRouter>
   </div>
