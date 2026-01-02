@@ -1,6 +1,5 @@
 import Home from './components/Home';
 import Categories from "./components/Categories";
-import ReadList from "./components/ReadList";
 import About from "./components/About";
 import SearchList from './components/searchlist';
 import Navbar from "./components/Navbar"
@@ -34,7 +33,6 @@ import { useState } from 'react';
       <Route index element = {<Home />} />
       <Route path = "/Home" element = {<Home />} />
       <Route path = "/Categories" element = {<Categories />} />
-      <Route path = "/ReadList" element = {<ReadList />} />
       <Route path = "/About" element = {<About />} />
       
     </Routes>

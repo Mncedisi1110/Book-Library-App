@@ -25,8 +25,10 @@ function Categories (){
         <body className="bg-gray-800">
         <div className="grid grid-cols-4">
             {categories.map(categorie =>(
-                <div className="py-5 px-6 text-gray-200" key={categorie.id}>
-                    {categorie.name}
+                <div className="px-5 py-5 text-cyan-500 font-serif" key={categorie.id}>
+                    {categorie.name}<br/>
+                    <button className="bg-orange-400 text-gray-800 border-amber-100 shadow-gray-400 width-30
+                     rounded font-medium"><a href={categorie.url}>View</a></button>
                     </div>
             ))}
         </div>

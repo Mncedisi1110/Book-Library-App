@@ -36,8 +36,8 @@ const handleBookdetails =(Book) =>{
         <BookDetails Book={viewbook} />):(
      <div  className ="grid grid-cols-4 text-gray-200 px-4">
       
-            {books.slice(0,52).map(Book =>(
-                <div className="px-5 py-5" key={Book.id}>
+            {books.slice(0,832).map(Book =>(
+                <div className="px-5 py-5 text-cyan-500 font-serif" key={Book.id}>
                   <img style={{color:"blue"}} src={Book.cover_thumb}/>
                     {Book.title}<br/>
                      <button className="bg-orange-400 text-gray-800 border-amber-100 shadow-gray-400 width-30
