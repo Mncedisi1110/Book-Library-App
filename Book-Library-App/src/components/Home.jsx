@@ -38,7 +38,7 @@ const handleBookdetails =(Book) =>{
       
             {books.slice(0,832).map(Book =>(
                 <div className="px-5 py-5 text-cyan-500 font-serif" key={Book.id}>
-                  <img style={{color:"blue"}} src={Book.cover_thumb}/>
+                  <img src={Book.cover}/>
                     {Book.title}<br/>
                      <button className="bg-orange-400 text-gray-800 border-amber-100 shadow-gray-400 width-30
                      rounded font-medium" onClick={() => handleBookdetails(Book)}>
